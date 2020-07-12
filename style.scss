@@ -1,0 +1,194 @@
+$primary: #00A9EB;
+$primary_dark: #3959A2;
+
+
+html { scroll-behavior: smooth; user-select: none; }
+img { pointer-events: none; }
+
+h1 {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+
+.navbar {
+	background-color: #314F93;
+	justify-content: space-around !important;
+
+	.join-now input {
+		color: #314F93;
+		background-color: white;
+
+		font-size: 1.5rem;
+		height: 3rem;
+		width: 15rem;
+		
+		border: none;
+		border-radius: 50px;
+	}
+
+	.navbar-brand {
+		width: 30%;
+
+		img { width: 4rem; border-radius: 50%; }
+	
+	}
+}
+
+.intro-section {
+	width: 100%;
+	background-color: $primary_dark;
+
+	h2 {
+		user-select: none;
+		text-align: center;
+		color: white;
+
+		font-size: 3rem;
+		font-family: 'Poppins', sans-serif;
+	}
+}
+
+.main-section {
+	margin-top: 6rem;
+
+	object {
+		width: 100%;
+		height: 500px;
+	}
+
+	.summary-group {
+
+		a {
+			color: $primary;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			
+			font-family: 'Noto Sans SC', sans-serif;
+			font-weight: 500;
+			font-size: 1.5rem;
+
+			img { filter: invert(52%) sepia(98%) saturate(2015%) hue-rotate(162deg) brightness(94%) contrast(102%); }
+
+		}
+	}
+
+	.join-now {
+		margin-top: 6rem;
+	
+		input {
+			color: white;
+			background-color: $primary_dark;
+	
+			font-size: 2rem;
+			height: 5rem;
+			width: 20rem;
+			
+			border: none;
+			border-radius: 50px;
+		}
+	}
+	
+	#para-todos, #pagos-diarios {
+		flex-direction: column;
+		img { height: 20rem; filter: invert(29%) sepia(76%) saturate(671%) hue-rotate(187deg) brightness(93%) contrast(86%); }
+	}
+
+	#transparencia {
+		width: 100%;
+		background-color: $primary_dark;
+		flex-direction: column;
+		img { height: 20rem; filter: invert(99%) sepia(6%) saturate(187%) hue-rotate(187deg) brightness(120%) contrast(100%); }
+		h1 { color: white; width: 60%; }
+	}
+
+}
+
+.results-section {
+
+	background-color: $primary_dark;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+	img { height: 40rem; }
+
+	.images { position: relative; z-index: 2; }
+
+	#n51_7 {
+		position: absolute;
+		color: rgb(57, 89, 162);
+		height: 35rem;
+	}
+		
+	#n51_8 {
+		position: absolute;
+		color: rgb(57, 89, 162);
+		height: 30rem;
+	}
+
+}
+
+
+
+
+
+/* ----------------------- */ 
+/* RESPONSIVE */
+/* ----------------------- */
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
+
+	* { font-size: 8px; }
+
+	.intro-section { height: 400px; }
+	.main-section .summary-group img { height: 15rem; }
+	.results-section div { flex-direction: column; img { margin: 3rem 0 3rem 0; } }
+
+	#n51_7 { left: -10%; top: -5%; }
+	#n51_8 { right: -5%; bottom: 30%; }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) {
+	* { font-size: 8px; }
+
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) {
+
+	* { font-size: 8px; }
+	.results-section div { flex-direction: row; img { margin: 0 3rem 0 3rem; &:last-child, &:first-child { margin-top: 5rem; height: 35rem; } } }
+
+	#n51_7 { left: -10%; top: 20%; }
+	#n51_8 { right: -10%; bottom: -10%; }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) {
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+
+
+	* { font-size: 16px; }
+
+	.intro-section { height: 600px; }
+	.main-section .summary-group img { height: 20rem; }
+	.results-section div { flex-direction: row; img { margin: 0 3rem 0 3rem; &:last-child, &:first-child { margin-top: 5rem; height: 35rem; } } }
+
+	#n51_7 { left: -10%; top: 20%; }
+	#n51_8 { right: -10%; bottom: -10%; }
+}
+
+
+
